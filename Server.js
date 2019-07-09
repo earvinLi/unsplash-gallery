@@ -20,3 +20,7 @@ App.get('/api/photos', (req, res) => {
     // A better name for json?
     .then(json => res.json(json));
 });
+
+const PORT = process.env.PORT || 5000;
+
+App.listen(PORT, () => console.log(`Server started on port ${PORT}`));
