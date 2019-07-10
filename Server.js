@@ -8,8 +8,8 @@ const unsplashJsToJson = require('unsplash-js').toJson;
 const unsplashEngine = new Unsplash({
   applicationId: universalConfig.get('APPLICATION_ID'),
   secret: universalConfig.get('SECRET'),
-  callbackURL: universalConfig,get('CALLBACK_URL'),
-})
+  callbackUrl: universalConfig.get('CALLBACK_URL'),
+});
 
 const App = express();
 
